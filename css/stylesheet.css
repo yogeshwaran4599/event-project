@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5% ;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#event-section-wrapper{
+    padding: 3rem 9%;
+    margin: 3rem;
+    border-bottom: 0.rem solid rgba(0,0,0,0.1);
+}
+
+.heading{
+    font-size: 5rem;
+    padding: 1rem;
+}
+
+.img-section-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    background-color:lightgray;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-bottom:  0.5rem solid rgba(0,0,0,0.1);
+}
+
+.img-section-wrapper > img{
+    width: 20rem;
+}
+
+.details{
+    flex: 1 1 0rem;
+}
+
+.details > h1{
+    font-size: 4rem;
+}
+
+.details > p,
+.details > span{
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+
+.fa-map-marker-alt{
+    padding-right: .5rem;
+    color: rgb(45, 120, 167);
+}
+
+.fa-heart{
+    position: relative;
+    right: 10rem;
+    font-size: 3rem;
+    color: rgb(190, 166, 166);
+    
+}
+
+.fa-heart:hover{
+    cursor: pointer;
+}
+
+#heart1.active{
+    color: red;
+}
+
+#heart2.active{
+    color: red;
+}
+
+#heart3.active{
+    color: red;
+}
+
+
+#add-event{
+    padding: 1rem;
+    border: 0.3rem solid rgba(0,0,0,0.1);
+    font-size: 2rem;
+    position: relative;
+    right: -80%;
+    background-color: goldenrod;
+   
+}
+
+#add-event:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+#form-wrapper{   
+    border: 0.5rem solid rgba(0,0,0,0.5);
+    padding: 2rem;
+    width: 50rem;   
+    position: absolute;
+    top: -115%;
+    left: 40%;
+    z-index: 100;
+    background-color: rgb(165, 153, 155);
+}
+
+.fa-times{
+    font-size: 3rem;
+    position: relative;
+    float: right;
+}
+
+
+.fa-times:hover{
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+#form-wrapper.active{
+    top: 40%;
+}
+
+.form-inputs{
+    display: grid;    
+}
+
+.form-inputs >label{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.form-inputs > input{
+    font-size: 2rem;
+    padding: 1rem;
+    border-bottom:  0.5rem solid rgba(0,0,0,0.1);
+}
+
+#about{
+    border-bottom:  0.5rem solid rgba(0,0,0,0.1);
+    font-size: 2rem;
+}
+
+#upload{
+    padding: 1rem;
+    margin-top:1rem;
+    border: 0.3rem solid rgba(0,0,0,0.1);
+    font-size: 2rem;
+    position: relative;
+    right: -80%;
+    background-color: goldenrod;
+}
+
+#upload:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+#upload-img {    
+    margin-top:1rem;
+    border: 0.3rem solid rgba(0,0,0,0.1);
+    font-size: 2rem;
+    position: relative;   
+}
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+   #event-section-wrapperdiv{
+        padding: 3rem 2rem;
+    }
+
+    #form-wrapper{
+        position: absolute;       
+        left: 30%;
+       
+    }
+}
+
+@media(max-width:768px){
+    #form-wrapper{
+        position: absolute;
+        left: 20%;
+    }
+}
+
+@media(max-width:450px){
+    .fa-heart{
+        position: relative;
+        right: 0rem;        
+    }
+
+    #form-wrapper{
+        position: absolute;
+        width: 30rem;
+    }
+
+    #upload{       
+        position: relative;
+        right: 0;       
+       
+    }
+}
+
+
+
+

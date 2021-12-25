@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event handler</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="style/all.css">
+    <script src="webfonts/fa-brands-400.svg"></script>
+
+</head>
+
+<body>
+    <!--event section starts here-->
+
+    <div id="event-section-wrapper">
+
+
+        <h1 class="heading">likes</h1>
+
+        <div class="img-section-wrapper">
+
+            <img id="event-image" src="images/science hub.jpeg" alt="science hub">
+
+            <div class="details">
+
+                <h1>event name</h1> 
+                <p>about event</p>               
+                <span>time</span>
+                <span> <i  class="fas fa-map-marker-alt"></i> location</span>
+
+            </div>
+
+            <div class="fas fa-heart" onclick="changeColor1()" id="heart1"></div>
+
+        </div>
+
+        <div class="img-section-wrapper">
+
+            <img src="images/music show.jpg" alt="music show">
+
+            <div class="details">
+
+                <h1>event name</h1> 
+                <p>about event</p>               
+                <span>time</span>
+                <span> <i class="fas fa-map-marker-alt"></i> location</span>
+
+            </div>
+
+            <div class="fas fa-heart" onclick="changeColor2()" id="heart2"></div>
+
+        </div>
+
+        <div class="img-section-wrapper">
+
+            <img src="images/cook.jpg" alt="cooking competition">
+
+            <div class="details">
+
+                <h1>event name</h1> 
+                <p>about event</p>               
+                <span>time</span>
+                <span> <i class="fas fa-map-marker-alt"></i> location</span>
+
+            </div>
+
+            <div class="fas fa-heart" onclick="changeColor3()" id="heart3"></div>
+
+        </div>       
+
+    </div>
+
+    <button id="add-event">add event</button>
+
+    <!--event section ends here-->
+
+
+
+
+    <!--form section starts here-->
+
+        <div id="form-wrapper">
+
+            <div  class="fas fa-times" id="times"></div>
+
+            <div class="form-inputs">                            
+                <label for="event">event name</label>
+                <input type="text" placeholder="enter event name" name="event-name" required id="event">
+            </div>
+
+            <div class="form-inputs"> 
+                <label for="about"> about event</label>
+                <textarea name="comments" placeholder="about event" name="about" required id="about" cols="10" rows="5"></textarea>
+            </div>
+
+            <div class="form-inputs"> 
+                <label for="time">time</label>
+                <input type="time" placeholder="enter time" name="time" required id="time">
+            </div>
+
+            <div class="form-inputs"> 
+                <label for="location">location</label>
+                <input type="text" placeholder="enter place" id="location" name="loaction" required>
+            </div>
+
+            <div>
+                <input id="upload-img" type="file" onchange="readURL(this)" accept="Image/*">
+            </div>
+
+            <button id="upload" onclick="upLoad()">upload</button>
+
+        </div>
+
+    <!--form section ends here-->
+
+    
+</body>
+
+<script src="javascript/js.js"></script>
+
+</html>
